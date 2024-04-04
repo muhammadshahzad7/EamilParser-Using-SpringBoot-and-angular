@@ -1,0 +1,40 @@
+<form class="main" [formGroup]="emailForm">
+  <h1>Welcome to email app</h1>
+  <div class="container">
+
+    <textarea class="emails" placeholder="Enter emails" [formControl]="input">
+    </textarea>
+    <button class="btn" (click)="validate()">
+      Validate
+    </button>
+
+    <h2>
+      Invalid Emails
+    </h2>
+    <div>
+      <ul>
+        @if(invalidEmails.length == 0){
+        <li>No data</li>
+        }@else {
+        @for (item of invalidEmails; track item){
+        <li>{{item}}</li>
+        }
+        }
+
+      </ul>
+    </div>
+    <!-- <h2>
+      Existing Emails
+    </h2>
+    <div>
+      <ul>
+        @if(existingEmails.length == 0){
+        <li>No data</li>
+        }
+        @for (item of existingEmails; track item){
+        <li>{{item.email}}</li>
+        }
+      </ul>
+    </div> -->
+  </div>
+</form>

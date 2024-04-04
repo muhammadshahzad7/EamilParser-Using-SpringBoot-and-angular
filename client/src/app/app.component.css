@@ -1,0 +1,39 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.main{
+
+    display: flex;
+    flex-direction: column;
+    margin: 50px
+}
+
+h1{
+    font-weight: 600;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.btn{
+    width: fit-content;
+    background-color:yellowgreen;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.emails{
+    font-size: 18px;
+    height: 300px;
+    width: 500px;
+    max-width: 90vw;
+    max-height: 90vh;
+    padding: 10px
+}
